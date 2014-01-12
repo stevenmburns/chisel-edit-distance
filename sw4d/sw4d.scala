@@ -86,7 +86,6 @@ class sw4dTests(c: sw4d) extends Tester(c, Array(c.io)) {
        val Z         = lst(4)
        val res = sw4dRef( ms_select, L, U, Y, Z)
        println( ms_select, L, U, Y, Z, res)
-/*
        vars.clear()
        vars(c.io.select_ms) = UInt(ms_select,width=2)
        vars(c.io.L) = SInt(L,width=4)
@@ -98,7 +97,6 @@ class sw4dTests(c: sw4d) extends Tester(c, Array(c.io)) {
        vars(c.io.Yp) = UInt(res(2),width=4)
        vars(c.io.Zp) = UInt(res(3),width=4)
        allGood = step(vars) && allGood
-*/
     }
     allGood
   }
