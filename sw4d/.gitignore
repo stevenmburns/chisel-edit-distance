@@ -1,0 +1,6 @@
+target/
+*~
+.history
+sw4d
+*.cpp
+*.h
